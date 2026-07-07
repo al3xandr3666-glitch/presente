@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aishiteru </title>
+    <link rel="stylesheet" href="presente.css">
+</head>
+
+<!-- Música Paparazzi - Lady Gaga -->
+<audio id="bg-music" loop>
+    <source src="paparazzi.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+<script>
+    const music = document.getElementById('bg-music');
+    
+    // Toca a música automaticamente quando o usuário clicar em qualquer lugar da página
+    document.body.addEventListener('click', () => {
+        music.play().catch(() => {});
+    }, { once: true });
+
+    music.volume = 0.35; // Volume baixo para não incomodar (ajuste se quiser)
+</script>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="https://i.pinimg.com/originals/ad/78/25/ad782512cd8ee19f8e35cfb977bfe29c.gif" alt="Logo Morango" class="logo-img">
+            </div>
+            
+            <nav class="nav">
+                <a href="#" class="nav-btn active">menu</a>
+                <a href="#" class="nav-btn">promotions</a>
+                <a href="#" class="nav-btn">location</a>
+            </nav>
+
+            <div class="phone">
+                <a href="tel:+13459306837">📞 +55 (46) 98****-****</a>
+                <span> (pra um colo) </span>
+            </div>
+        </header>
+
+        <!-- Hero Banner -->
+        <div class="hero">
+            <img src="https://i.pinimg.com/originals/f0/b6/5a/f0b65a43d4d2c32b57562b4d256361e7.gif" alt="Chihiro entre flores" class="hero-img">
+            <div class="hero-overlay">
+                <div class="asian-street">com muito amor, para o meu</div>
+                <h1 class="main-title">ARTUR</h1>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="our-kitchen">
+                    <h2>Carta aberta.</h2>
+                    <p>We specialize in preparing authentic dishes from various regions of the East, in order to immerse our guests in the authentic atmosphere of Asian cuisine.</p>
+                </div>
+
+                <div class="specialty-drinks">
+                    <h3 class="section-title">specialty drinks</h3>
+                    <img src="https://media.discordapp.net/attachments/1185405461059604510/1523850359343288460/3c005f19-50e6-4576-9121-29cfe937574a.png?ex=6a4d9bbd&is=6a4c4a3d&hm=6aa5c40e8d982405a8511d28bd940a324ac51c5ac5979104759cdce07fec9992&=&format=webp&quality=lossless&width=816&height=612" alt="Bandeja de comida asiática" class="food-image">
+                    <a href="#" class="catalog-btn">view the catalog</a>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <h2 class="news-title">NEWS</h2>
+                
+            <div class="news-item">
+                 <img src="https://i.pinimg.com/736x/f5/13/ac/f513ac61bea9920a3bde4bb41f94a289.jpg" alt="Fuga para Noruega" class="news-icon">
+                <p><strong>Casal é flagrado em praia tentando um plano de fuga para a Noruega na praia em Caxias.</strong><br>
+                            Um casal foi flagrado na Praia de Caxias montando um improvisado "barco viking" feito com isopor, guarda-sol e caixas de leite. Segundo testemunhas, os dois discutiam acaloradamente qual seria a melhor rota: “Pelo amor de Deus, amor, é só seguir o GPS até Oslo!”...</p>
+            </div>
+
+                <div class="news-item">
+                    <img src="https://media.discordapp.net/attachments/994438950737416203/1523850891545940089/adb5e129592dcbb1540389d029dc001b.png?ex=6a4d9c3c&is=6a4c4abc&hm=4f367769666e3f863144e8bf35ef3cc325076e5b78409224ff4b7f8b3843eb99&=&format=webp&quality=lossless" alt="Coffee + Dessert" class="news-icon">
+                <p><strong>Rin Itoshi endoida em campo e saí correndo atrás de juíz após ter tido o seu terceiro gol contra adversário impedindo.</strong><br>
+                            Rin Itoshi surtou após fazer o terceiro gol contra o próprio time. Com cara de louco e língua de fora, saiu correndo atrás do juiz gritando “Isso foi impedimento, seu ladrão!”. A segurança precisou intervir antes que ele conseguisse dar um carrinho no árbitro.
+                </div>
+
+                <div class="news-item">
+                    <img src="https://i.pinimg.com/736x/04/f2/bc/04f2bcdffe3ff7f0b88f7b3aaac44b63.jpg" alt="Summer Lounge" class="news-icon">
+                    <p><strong>Meliodas anuncia que irá oficialmente se casar com Elizabeth e que vai se mudar para um lugar calmo para poderem descansar após tempos de uma jornada exaustiva.</strong><br>
+                            Após longa jornada, Meliodas oficializou o noivado com Elizabeth e revelou que o casal vai se mudar para um vilarejo tranquilo. “Chega de brigas. Quero só paz, cerveja e viver com ela”, declarou o Capitão.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
